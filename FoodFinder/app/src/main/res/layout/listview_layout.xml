@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+
+    android:padding="6dip">
+    <!-- Recipe Image -->
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="20sp" />
+
+    <!-- publisher(layout purposes) -->
+    <TextView
+        android:id="@+id/middleText"
+        android:layout_width="wrap_content"
+        android:layout_height="15dip"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_below="@id/topText"
+        android:gravity="center_vertical"
+        android:textSize="14sp" />
+
+    <!-- Publisher (Data) -->
+    <TextView
+        android:id="@+id/middleTextData"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_below="@id/middleText"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textIsSelectable="false"
+        android:textSize="16sp" />
+
+</RelativeLayout>
